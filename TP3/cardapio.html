@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<title>Cardápio</title>
+	<meta charset="UTF-8">
+	<meta name="author" content="Bruno Barros">
+	<meta name="description" content ="Venda de Café Móvel">
+	<link rel="stylesheet" type="text/css" href="_css/reset.css"/>
+	<link rel="stylesheet" type="text/css" href="_css/estilos.css"/>
+	<link rel="icon" href="_images/favicon.png"/>
+	<link rel="stylesheet" href="_css/animate.css">
+	<script src="jquery-3.2.1.js"></script>
+	<script src="modernizr.js"></script>
+
+	<script type="text/javascript">
+	
+	$(document).ready(function() {
+    	console.log( "ready!" );
+    	$("tr:even").css("background-color", 'white');
+		$("tr:odd").css("background-color", '#D6AF98');
+
+	});
+
+	</script>
+</head>
+
+<body>
+
+	<div id="container">
+
+		<figure id="img_logo">
+		<img src="_images/logo_kombi_coffee.png" title="Kombi Coffe Logo" alt="Kombi Coffe">
+		</figure>
+
+		<nav>
+			<ul>
+				<li class="navMenu"><a href="index.html" title="Página inicial"> HOME</a></li>
+				<li class="navMenu"><a href="local.html" title="Página de localização"> LOCAL</a></li>
+				<li class="navMenu"><a href="cardapio.html" title="Página de cardápio"> CARDÁPIO</a></li>
+				<li class="navMenu"><a href="eventos.html" title="Página de eventos"> EVENTOS</a></li>
+				<li class="navMenu"><a href="contato.html" title="Página de contatos"> CONTATO</a></li>
+			</ul>
+		</nav>
+
+
+		<h1 class="animated bounceInLeft" id="chamada">O café que chega até você!</h1>
+
+		<figure id="img_banner">
+			<img src="_images/banner.jpg" title="Imagem café" alt="Imagem Ilustrativa Café">
+		</figure>
+
+		<main>
+
+			<h1>Nossos cafés</h1>
+
+			<table id="cardapio">
+			<caption>Cardápio</caption>
+			 <tbody>
+			  <tr>
+			    <th>Foto</th>
+			    <th>Descrição</th> 
+			    <th>Preço</th>
+			  </tr>
+			  <tr>
+			    <td class="um"><img src="_images/cafe-quente.jpg" title="Imagem Café" alt="Imagem Ilustrativa Café"></td>
+			    <td><h4>Cafés Quentes</h4><p>Importamos grãos diretamente da Indonésia.</p></td> 
+			    <td>R$5,00</td>
+			  </tr>
+			  <tr>
+			    <td class="um"><img src="_images/cafe-gelado.jpg" title="Imagem Café" alt="Imagem Ilustrativa Café Gelado"></td>
+			    <td><h4>Cafés Gelados</h4><p>Nosso Frappuccino é famoso até na Itália!</p></td> 
+			    <td>R$10,00</td>
+			  </tr>
+			  <tr>
+			  	<td class="um"><img src="_images/cafe-alcoolico.jpg" title="Imagem Café" alt="Imagem Ilustrativa Café Alcoólico"></td>
+			  	<td><h4>Cafés Alcoólicos</h4><p>Aproveite para se aquecer no inverno com nossos deliciosos cafés.</p></td>
+			  	<td>R$10,00</td>
+			  </tr>
+			  <tr>
+			  	<td class="um"><img src="_images/chocolate.jpg" title="Imagem Achocolatado" alt="Imagem Ilustrativa Achocolatado"></td>
+			  	<td><h4>Chocolates</h4><p>Mesmo que sua preferência não seja café, nós temos algo para você.</p></td>
+			  	<td>R$6,00</td>
+			  </tr>
+		     </tbody>
+		     <tfoot>
+		     	<tr>
+		     		<td colspan="3">Nossos cafés são sempre produzidos com grãos orgânicos.</td>
+		     	</tr>
+		     </tfoot>  
+			</table>
+			
+		</main>
+	</div>
+
+	<footer>
+		<hr>
+		<p id="copyright">Copyright &copy;</p>
+	</footer>
+
+</body>
+
+</html>

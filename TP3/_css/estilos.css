@@ -1,0 +1,270 @@
+
+@import url('https://fonts.googleapis.com/css?family=Merienda+One');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+div#container{
+	width: 960px;
+	margin: 0 auto;
+	background-color: white;
+}
+
+div#escolha{
+	display: block;
+	float: left;
+	width: 50%;
+}
+
+
+div#escolha figure#img_cafe img{
+
+	margin-left: -12px;
+	margin-top: -10px;
+}
+
+
+
+div#onde{
+	display: block;
+	float: right;
+	width: 50%;
+}
+
+div#onde figure#img_mapa,div#escolha figure#img_cafe{
+
+	float: left;
+	height: 100px;
+	width: 100px;
+	margin-right: 20px;
+	margin-left: 20px;
+	margin-top: 40px;
+	border-radius: 50%;
+	overflow: hidden;
+	text-align: center;
+}
+
+
+div#onde figure#img_mapa img{
+
+	margin-left: -18px;
+	margin-top: -10px;
+
+	
+}
+
+div#onde p, div#escolha p{
+
+	margin-top: 25px;
+	margin-right: 20px;
+}
+
+
+div#selo{
+	position: absolute;
+	border-radius: 50%;
+	width: 170px;
+	height: 170px;
+	text-align: center;
+	margin-top: -200px;
+	margin-left: 50px;
+	background-color: rgba(139,69,19,0.5);
+	font-family: sans-serif;
+}
+
+div#selo p{
+
+	margin-top: 32%;
+	margin-left: -1%;
+	color: white;
+
+}
+
+
+
+nav{
+	background-color: #532d24;
+	text-align: center;
+	margin-bottom: 20px;
+	padding-top: 6px;
+	margin-top: 20px;
+
+
+
+}
+
+.clr{
+	clear: both;
+	float: none;
+	width: 100%;
+	height: 1px;
+	border: none;
+	visibility: hidden;
+}
+
+ul{
+
+	
+}
+
+li{
+	
+	display: inline-block;
+	padding: 3px;
+	margin: 2px;
+	position: relative;
+	margin-right: -5px;
+	margin-bottom: 10px;
+
+}
+
+li.navMenu a{
+	color: white;
+	text-decoration: none;
+	height: auto;
+}
+
+li+li { border-left: 1px solid white; }
+
+body{
+	background-color: #f7f7f7;
+	font-family: 'Times New Roman';
+}
+
+footer{
+	text-align: right;
+	padding-bottom: 10px;
+}
+
+
+figure#img_logo{
+	width: 15%;
+	margin: 0 auto;
+}
+
+figure#img_logo img{	
+	width: 100%;	
+}
+
+figure#img_banner{
+	width: 100%;
+	margin: 0 auto 20px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 20px;
+	overflow: hidden;
+}
+
+figure#img_banner img{
+	width: 100%
+}
+
+
+figure#img_mapa{
+
+}
+
+h1{
+	color:#532d24;
+	font-family: 'Merienda One', cursive;
+	font-size: 1.5em;
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+
+h1#escondido{
+	display: none;
+}
+
+h1#chamada{
+	text-align:center;
+	font-size: 2.5em;
+}
+
+h2{
+	color:#532d24;
+	font-family: 'Merienda One', cursive;
+	font-size: 1.2em;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	margin-top: 20px;
+
+}
+
+h3.navMenu{
+	color: white;
+}
+
+p{
+	margin-left: 20px;
+	line-height: 150%;
+}
+
+p#copyright{
+	margin-right: 10px;
+	margin-top: -10px;
+}
+p#lorem1,p#lorem2,p#lorem3,p#lorem4,p#lorem5{
+	text-indent: 30px;
+	margin-right: 20px;
+	margin-top: 20px;
+}
+
+
+
+
+table, th, td{
+
+	border: 1px solid black;
+	vertical-align: middle;
+	padding: 4px;
+
+
+}
+
+caption{
+	color:#8A7A49;
+	font-family: 'Merienda One', cursive;
+	font-size: 1.5em;
+	margin: 0px 0px 30px 10px;
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+table#cardapio{
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 1.3em;
+}
+
+table#cardapio h4{
+	text-align: center;
+
+}
+
+table#cardapio p{
+	margin: 0px 20px;
+	text-align: center;
+}
+
+table#cardapio footer{
+	position: relative;
+}
+
+table#cardapio tfoot{
+	text-align: center;
+	background-color: #D6AF98;
+}
+
+table#cardapio td.um{
+	padding: 0px;
+}
+
+table#cardapio tr:nth-child(even) p, h4 {
+   /*color: white;*/
+}
+
+iframe#gmaps{
+	margin: 50px 180px;
+	width: 600px;
+	height: 450px;
+	border: none;
+}

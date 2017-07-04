@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Contato</title>
+	<meta charset="UTF-8">
+	<meta name="author" content="Bruno Barros">
+	<meta name="description" content ="Venda de Café Móvel">
+	<link rel="stylesheet" type="text/css" href="_css/reset.css"/>
+	<link rel="stylesheet" type="text/css" href="_css/estilos.css"/>
+	<link rel="stylesheet" type="text/css" href="_css/form.css"/>
+	<link rel="icon" href="_images/favicon.png"/>
+	<link rel="stylesheet" href="_css/animate.css">
+	<script src="jquery-3.2.1.js"></script>
+	<script src="modernizr.js"></script>
+
+	<script type="text/javascript">
+	
+	$( document ).ready(function() {
+    	console.log( "ready!" );
+	});
+
+	</script>
+
+</head>
+<body>
+	<div id="container">
+
+		<figure id="img_logo">
+		<img src="_images/logo_kombi_coffee.png" title="Kombi Coffe Logo" alt="Kombi Coffe">
+		</figure>
+
+		<nav>
+			<ul>
+				<li class="navMenu"><a href="index.html" title="Página inicial"> HOME</a></li>
+				<li class="navMenu"><a href="local.html" title="Página de localização"> LOCAL</a></li>
+				<li class="navMenu"><a href="cardapio.html" title="Página de cardápio"> CARDÁPIO</a></li>
+				<li class="navMenu"><a href="eventos.html" title="Página de eventos"> EVENTOS</a></li>
+				<li class="navMenu"><a href="contato.html" title="Página de contatos"> CONTATO</a></li>
+			</ul>
+		</nav>
+
+
+		<h1 class="animated bounceInLeft" id="chamada">O café que chega até você!</h1>
+
+		<figure id="img_banner">
+			<img src="_images/banner.jpg" title="Imagem café" alt="Imagem Ilustrativa Café">
+		</figure>
+
+		<div id="divUsuario">
+			<h1>Fale Conosco</h1>					
+		</div>
+
+		
+		<form method="post" id="fContato" oninput="calc_total();">
+
+			<div class="divform" id="assunto">
+				<label for="cAss">Assunto: </label>
+				<select name ="tAss" id="cAss">					
+					<option value="1" selected>Escolha o Assunto</option>
+					<option value="2">Fornecedores</option>
+					<option value="3">Elogios</option>
+					<option value="4">Críticas</option>
+					<option value="5">Dúvidas</option>
+					<option value="6">Sugestões</option>
+				</select>
+			</div>
+
+			<div class="divform" id="nomeSobrenome">
+				<label for="cNome">Nome: </label>
+				<input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome"><br/>
+				<label for="cSobrenome">Sobrenome: </label>
+				<input type="text" name="tSobrenome" id="cSobrenome" size="20" maxlength="30" placeholder="Sobrenome">
+			</div>
+
+			<div class="divform" id="cpfEmail">
+				<label for="cMail">E-mail: </label>
+				<input type="email" name="tMail" id="cMail" size="20" maxlength="40" placeholder="E-mail">
+			</div>
+
+			<div class="divform" id="sexoDataNasc">
+				<label>Sexo: </label>
+				<div id="radSexo">
+					<input type="radio" name="tSexo" id="cMasc"> <label for="cMasc">Masculino</label><br/>
+					<input type="radio" name="tSexo" id="cFem"> <label for="cFem">Feminino</label>
+				</div>
+				
+				<label for="cNasc">Data de Nascimento</label>
+				<input type="date" name="tNasc" id="cNasc">
+			</div>
+
+			<div class="divform" id="endereco">
+
+				<label for="cEst">Estado: </label>
+				<select name ="tEst" id="cEst">
+					<optgroup label="Região Sudeste">
+						<option  value="RJ" selected>Rio de Janeiro</option>
+						<option value="SP">São Paulo</option>
+						<option  value="MG" >Minas Gerais</option>
+						<option  value="ES">Espírito Santo</option>
+					</optgroup>
+
+					<optgroup label="Região Sul">
+						<option  value="RS">Rio Grande do Sul</option>
+						<option  value="SC">Santa Catarina</option>						
+						<option  value="PR" >Paraná</option>
+					</optgroup>
+				</select>
+
+				<label for="cCid">Cidade</label>
+				<input type="text" name="tCid" id="cCid" size="20" maxlength="40" placeholder="Sua Cidade" list="cidades">
+				<datalist id="cidades">
+					<option value="Rio de Janeiro"></option>
+					<option value="Belford Roxo"></option>
+					<option value="Niterói"></option>
+				</datalist>
+
+				<label for="cRua">Logradouro: </label>
+				<input type="text" name="tRua" id="cRua" placeholder="Rua, Av, Trav, etc..." size="20" maxlength="80">
+
+				<label for="cNum">Número: </label>
+				<input type="number" name="tNum" id="cNum" min="0" max="99999">
+
+			</div>
+
+			<div class="divform" id="mensagem">
+				<label for="cMsg">Mensagem</label><textarea name="tMsg" id="cMsg" cols="35" rows="5" placeholder="Deixe aqui sua mensagem."></textarea>
+			
+
+				<input type="submit" value="Enviar" id="enviar">
+				<!-- <input type="image" name="tEnviar" src="_images/x.png"> -->
+			</div>
+		
+			
+
+		</form>
+			
+		
+
+		<footer>
+			<hr>
+			<p id="copyright">Copyright &copy;</p>
+		</footer>
+
+	</div>
+
+</body>
+
+</html>
